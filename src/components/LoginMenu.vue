@@ -29,33 +29,32 @@
             
 
             return {
-                data: function () {
-                    return {
-                        user: { 
-                            nickname,
-                            name,
-                            picture,
-                            updated_at,
-                            email,
-                            email_verified,
-                            sub,
-                        },
-                    };
-                },
-                name: 'LoginMenu',
+                // data: function () {
+                //     return {
+                //         user: { 
+                //             nickname,
+                //             name,
+                //             picture,
+                //             updated_at,
+                //             email,
+                //             email_verified,
+                //             sub,
+                //         },
+                //     };
+                // },
                 isAuthenticated: auth0.isAuthenticated,
                 isLoading: auth0.isLoading,
                 user: auth0.user,
 
-                login: () => {
+                login() {
                     auth0.loginWithRedirect();
                 },
-                logout: () => {
+                logout() {
                     auth0.logout({ 
                         returnTo: window.location.origin
                     });
-                },
-            };
+                }
+            }
         }
     };
   </script>
