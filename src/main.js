@@ -3,12 +3,14 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import './style.css'
 
+import authConfig from "../auth_config.json";
+
 const app = createApp(App);
 
 app.use(
   createAuth0({
-    domain: "dev-nq6cgd3w773e7fxn.us.auth0.com",
-    client_id: "R9RYBjEMEB4EzsZJj4vDETUkc9XDp2Wj",
+    domain: authConfig.domain,
+    client_id: authConfig.clientId,
     redirect_uri: window.location.origin,
   })
 );
