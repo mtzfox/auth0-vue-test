@@ -63,7 +63,7 @@
 <style>
 #app {
     background-color: slateblue;
-border-radius: 5px;
+    border-radius: 5px;
 }
 #mobileAuthNavBar {
   min-height: 125px;
