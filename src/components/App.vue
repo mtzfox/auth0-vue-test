@@ -1,5 +1,5 @@
 <script setup>
-import LoginMenu from './components/LoginMenu.vue';
+import LoginMenu from './LoginMenu.vue'
 </script>
 
 <template>
